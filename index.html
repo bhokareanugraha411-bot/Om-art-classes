@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b0a">
+<meta name="description" content="OM Art Classes by Amol Gurav — drawing and art classes in Brahmanpuri, Miraj 416410.">
+<title>OM Art Classes — Art. Discipline. Expression.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
+<style>
+:root{
+ --black:#0b0b0a;--black2:#12110f;--cream:#f4efe6;--paper:#fbf8f1;
+ --gold:#c39a60;--gold2:#e5c899;--muted:#a29b91;--darkmuted:#6f6961;
+ --line:#ffffff18;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:#f7f2e9;font-family:Inter,Arial,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+::selection{background:var(--gold);color:#111}
+
+.nav{
+ position:fixed;z-index:100;top:0;left:0;right:0;height:78px;padding:0 5.5%;
+ display:flex;align-items:center;justify-content:space-between;
+ border-bottom:1px solid #ffffff0b;background:#0b0b0ad9;backdrop-filter:blur(18px)
+}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:39px;height:39px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-family:Italiana,serif;color:var(--gold);font-size:19px}
+.logo-text{font-family:"DM Serif Display",serif;font-size:20px;letter-spacing:.03em}
+.navlinks{display:flex;align-items:center;gap:28px;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.navlinks a{opacity:.72;transition:.25s}.navlinks a:hover{opacity:1;color:var(--gold2)}
+.nav-cta{padding:11px 17px;border:1px solid #ffffff38;border-radius:100px;opacity:1!important}
+
+.hero{
+ min-height:100vh;position:relative;display:grid;grid-template-columns:1.04fr .96fr;
+ align-items:center;padding:130px 7% 75px;gap:6vw;
+ background:radial-gradient(circle at 78% 35%,#8c68361e,transparent 30%),linear-gradient(110deg,#0b0b0a,#12110f 50%,#0b0b0a)
+}
+.hero:before{content:"";position:absolute;inset:0;opacity:.07;pointer-events:none;background-image:radial-gradient(#fff .55px,transparent .55px);background-size:5px 5px}
+.hero-copy,.hero-visual{position:relative;z-index:1}
+.kicker{display:flex;align-items:center;gap:12px;color:var(--gold2);font-size:10px;font-weight:700;letter-spacing:.27em;text-transform:uppercase}
+.kicker:before{content:"";width:34px;height:1px;background:var(--gold)}
+.hero h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(64px,8.2vw,124px);line-height:.82;letter-spacing:-.045em;margin:25px 0 28px}
+.hero h1 em{font-family:Italiana,serif;color:var(--gold2);font-style:normal}
+.hero-copy>p{max-width:600px;color:#b6afa6;font-size:16px;line-height:1.85}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 21px;border:1px solid #ffffff38;border-radius:100px;font-size:12px;font-weight:700;letter-spacing:.04em;transition:.25s}
+.btn:hover{transform:translateY(-2px);border-color:var(--gold)}
+.btn.primary{background:#f5efe5;color:#111;border-color:#f5efe5}.btn.primary:hover{background:var(--gold2);border-color:var(--gold2)}
+.btn.gold{border-color:var(--gold);color:var(--gold2)}
+
+.hero-visual{height:min(680px,74vh);min-height:500px}
+.hero-frame{position:absolute;inset:0 0 0 7%;overflow:hidden;border-radius:300px 300px 18px 18px;border:1px solid #ffffff24}
+.hero-frame img{width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.03)}
+.hero-frame:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,#0008)}
+.number{position:absolute;right:0;top:4%;font-family:Italiana,serif;color:#ffffff2d;font-size:90px;line-height:1}
+.seal{position:absolute;z-index:2;left:0;bottom:25px;width:126px;height:126px;border-radius:50%;background:var(--gold);color:#fff;display:grid;place-items:center;text-align:center;text-transform:uppercase;letter-spacing:.13em;font-size:10px;font-weight:700;padding:22px;box-shadow:0 12px 35px #0008}
+.hero-caption{position:absolute;z-index:2;right:20px;bottom:18px;color:#fff;font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+
+.marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);white-space:nowrap;background:#0f0f0d}
+.marquee-track{display:inline-block;padding:19px 0;font-family:Italiana,serif;font-size:20px;letter-spacing:.1em;color:#d7c2a3;animation:scroll 24s linear infinite}
+.marquee span{margin:0 28px;color:#6f665b}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+section{padding:110px 7%}
+.cream{background:var(--cream);color:var(--ink)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:50px;margin-bottom:52px}
+.section-head h2{font-family:"DM Serif Display",serif;font-size:clamp(48px,6.4vw,86px);font-weight:400;line-height:.9;letter-spacing:-.03em;margin-top:13px}
+.section-head p{max-width:470px;color:var(--muted);line-height:1.75;font-size:14px}
+.cream .kicker{color:#8f693b}.cream .kicker:before{background:#8f693b}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:center}
+.about-image{position:relative}
+.about-image img{width:100%;height:650px;object-fit:cover;border-radius:16px}
+.about-image:after{content:"";position:absolute;inset:16px -16px -16px 16px;border:1px solid #b68a531f;border-radius:16px;z-index:0}
+.about-image img{position:relative;z-index:1}
+.about-copy h2{font-family:"DM Serif Display",serif;font-size:clamp(46px,5.7vw,76px);font-weight:400;line-height:.95;margin:14px 0 25px}
+.about-copy>p{max-width:610px;color:#5f5952;line-height:1.85}
+.signature{font-family:Italiana,serif;font-size:30px;margin-top:28px;color:#8e6b40}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:35px}
+.fact{padding:19px;background:#eee6d9;border:1px solid #17141112}
+.fact small{display:block;text-transform:uppercase;letter-spacing:.13em;color:#997144;font-size:9px;font-weight:700;margin-bottom:5px}
+
+.gallery{background:#10100e}
+.gallery .section-head p{color:#999188}
+.gallery-grid{display:grid;grid-template-columns:1.05fr .72fr .9fr;grid-auto-rows:250px;gap:14px}
+.art{position:relative;overflow:hidden;background:#191816;border-radius:10px}
+.art img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1);filter:saturate(.9)}
+.art:hover img{transform:scale(1.055)}
+.art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,#000b)}
+.art figcaption{position:absolute;z-index:2;left:20px;right:20px;bottom:17px;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.art:nth-child(1){grid-row:span 2}
+.art:nth-child(4){grid-row:span 2}
+.art:nth-child(5){grid-column:span 2}
+
+.statement{min-height:65vh;display:grid;place-items:center;text-align:center;background:var(--paper);color:var(--ink)}
+.statement-inner{max-width:950px}
+.statement h2{font-family:"DM Serif Display",serif;font-size:clamp(50px,7vw,100px);font-weight:400;line-height:.92}
+.statement h2 em{font-family:Italiana,serif;color:#a47a43;font-style:normal}
+.statement p{max-width:620px;margin:28px auto 0;color:#716a62;line-height:1.8;font-size:15px}
+
+.contact{background:#0d0d0c}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.contact-card{border:1px solid #ffffff16;border-radius:20px;padding:42px;background:linear-gradient(135deg,#151411,#0d0d0c)}
+.contact-card h2{font-family:"DM Serif Display",serif;font-size:clamp(45px,5.5vw,76px);font-weight:400;line-height:.92;margin:14px 0 22px}
+.contact-card p{color:#a49d94;line-height:1.8}
+.contact-details{padding:12px 0}
+.detail{padding:24px 0;border-bottom:1px solid #ffffff12}
+.detail small{display:block;color:var(--gold);font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;margin-bottom:7px}
+.detail strong{font-size:15px;line-height:1.6}
+.social{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.social a{padding:11px 15px;border:1px solid #ffffff22;border-radius:100px;font-size:11px}
+
+footer{padding:30px 7%;border-top:1px solid #ffffff12;display:flex;justify-content:space-between;gap:20px;color:#777169;font-size:11px;letter-spacing:.04em}
+footer strong{color:#c8c0b5;font-family:"DM Serif Display",serif;font-size:17px;font-weight:400}
+
+@media(max-width:900px){
+ .navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:120px;gap:55px}
+ .hero-visual{height:540px;min-height:0}.hero-frame{left:0}.seal{left:-5px}
+ .about,.contact-grid{grid-template-columns:1fr}.about{gap:55px}
+ .gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:230px}.art:nth-child(1),.art:nth-child(4){grid-row:span 1}.art:nth-child(5){grid-column:span 2}
+}
+@media(max-width:600px){
+ .nav{height:68px;padding:0 5%}.logo-text{font-size:18px}.logo-mark{width:34px;height:34px}
+ .hero{padding:105px 6% 60px}.hero h1{font-size:62px}.hero-visual{height:455px}
+ .hero-frame{border-radius:220px 220px 14px 14px}.number{font-size:62px}
+ section{padding:78px 6%}.section-head{display:block;margin-bottom:34px}.section-head p{margin-top:18px}
+ .about-image img{height:460px}.facts{grid-template-columns:1fr}
+ .gallery-grid{display:grid;grid-template-columns:1fr;grid-auto-rows:340px}.art:nth-child(5){grid-column:auto}
+ .contact-card{padding:30px}.statement{min-height:55vh}
+ footer{display:block}footer span{display:block;margin-top:8px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+ <a class="logo" href="#"><span class="logo-mark">OM</span><span class="logo-text">OM Art Classes</span></a>
+ <div class="navlinks">
+  <a href="#about">The Studio</a><a href="#work">Artwork</a><a href="#contact">Contact</a>
+  <a class="nav-cta" href="https://wa.me/918390078978?text=Hello%20OM%20Art%20Classes%2C%20I%20want%20to%20enquire%20about%20admission." target="_blank">Admission</a>
+ </div>
+</nav>
+
+<header class="hero">
+ <div class="hero-copy">
+  <div class="kicker">Brahmanpuri · Miraj · 416410</div>
+  <h1>Art is<br><em>practice</em><br>made visible.</h1>
+  <p>OM Art Classes is a creative space led by artist and teacher <b>Amol Gurav</b> — helping students explore drawing, sketching, colour and detailed artwork through practice and guidance.</p>
+  <div class="actions">
+   <a class="btn primary" href="https://wa.me/918390078978?text=Hello%20OM%20Art%20Classes%2C%20I%20want%20to%20take%20admission." target="_blank">Contact for Admission ↗</a>
+   <a class="btn gold" href="#work">View the work ↓</a>
+  </div>
+ </div>
+ <div class="hero-visual">
+  <div class="number">01</div>
+  <div class="hero-frame"><img src="images/shiv-art.jpg" alt="Colourful artwork from OM Art Classes"></div>
+  <div class="seal">OM<br>Art<br>Classes</div>
+  <div class="hero-caption">Artwork · OM Art Classes</div>
+ </div>
+</header>
+
+<div class="marquee"><div class="marquee-track">DRAW · OBSERVE · CREATE <span>✦</span> LEARN · PRACTISE · EXPRESS <span>✦</span> OM ART CLASSES <span>✦</span> DRAW · OBSERVE · CREATE <span>✦</span> LEARN · PRACTISE · EXPRESS <span>✦</span> OM ART CLASSES <span>✦</span></div></div>
+
+<section id="about" class="cream">
+ <div class="about">
+  <div class="about-image"><img src="images/peacock-sketch.jpg" alt="Detailed peacock sketch from OM Art Classes"></div>
+  <div class="about-copy">
+   <div class="kicker">The studio</div>
+   <h2>A place to develop your own hand.</h2>
+   <p>At OM Art Classes, the focus is on the process behind the artwork — observing carefully, understanding form, building line confidence and learning how colour can transform a drawing.</p>
+   <p style="margin-top:15px">The gallery on this website features artwork created by <b>Amol Gurav and his students</b>.</p>
+   <div class="signature">Amol Gurav</div>
+   <div class="facts">
+    <div class="fact"><small>Studio</small>OM Art Classes</div>
+    <div class="fact"><small>Artist & Teacher</small>Amol Gurav</div>
+    <div class="fact"><small>Location</small>Brahmanpuri, Miraj</div>
+    <div class="fact"><small>Pincode</small>416410</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="work" class="gallery">
+ <div class="section-head">
+  <div><div class="kicker">Selected work</div><h2>Amol &amp; his students.</h2></div>
+  <p>Sketches, line work, watercolour and colourful compositions from the artwork you shared with us.</p>
+ </div>
+ <div class="gallery-grid">
+  <figure class="art"><img src="images/hanuman-sketch.jpg" alt="Detailed Hanuman drawing"><figcaption>Detailed drawing</figcaption></figure>
+  <figure class="art"><img src="images/watercolor-art.jpg" alt="Watercolour still life"><figcaption>Watercolour study</figcaption></figure>
+  <figure class="art"><img src="images/peacock-sketch.jpg" alt="Detailed peacock drawing"><figcaption>Fine line detail</figcaption></figure>
+  <figure class="art"><img src="images/shiv-art.jpg" alt="Colourful Shiva artwork"><figcaption>Colour &amp; composition</figcaption></figure>
+  <figure class="art"><img src="images/instagram-profile-gallery.jpg" alt="Artwork shown on the OM Art Classes Instagram"><figcaption>More from OM Art Classes</figcaption></figure>
+ </div>
+</section>
+
+<section class="statement">
+ <div class="statement-inner">
+  <div class="kicker" style="justify-content:center">The OM approach</div>
+  <h2>From the first line<br>to a finished <em>creation.</em></h2>
+  <p>Every artwork starts somewhere. With guidance, patience and practice, students can turn an idea on paper into something they are proud to create.</p>
+ </div>
+</section>
+
+<section id="contact" class="contact">
+ <div class="contact-grid">
+  <div class="contact-card">
+   <div class="kicker">Admissions</div>
+   <h2>Ready to<br>create?</h2>
+   <p>For admission, class details, timings and current batches, contact the owner directly by phone/WhatsApp or Instagram.</p>
+   <div class="actions">
+    <a class="btn primary" href="tel:+918390078978">Call 8390078978</a>
+    <a class="btn gold" href="https://wa.me/918390078978?text=Hello%20Amol%20Gurav%2C%20I%20want%20to%20take%20admission%20at%20OM%20Art%20Classes." target="_blank">WhatsApp ↗</a>
+   </div>
+  </div>
+  <div class="contact-details">
+   <div class="detail"><small>Owner / Artist / Teacher</small><strong>Amol Gurav</strong></div>
+   <div class="detail"><small>Address</small><strong>In front of Vidya Mandir Prashala,<br>Brahmanpuri, Miraj — 416410</strong></div>
+   <div class="detail"><small>Direct contact</small><strong>8390078978</strong></div>
+   <div class="detail"><small>Instagram</small><strong><a href="https://www.instagram.com/ar.amol_gurav/" target="_blank">@ar.amol_gurav ↗</a></strong></div>
+   <div class="social">
+    <a href="https://www.instagram.com/ar.amol_gurav/" target="_blank">Instagram ↗</a>
+    <a href="https://www.youtube.com/@OfficialAmolGurav" target="_blank">YouTube ↗</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <strong>OM Art Classes</strong>
+ <span>Art · Discipline · Expression · Brahmanpuri, Miraj 416410</span>
+</footer>
+
+</body>
+</html>
